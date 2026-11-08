@@ -12,7 +12,7 @@ La app prepara sus archivos para uso sin conexión después de la primera carga.
 
 Web estática sin dependencias de ejecución ni servicios de IA. Servir este directorio con `python -m http.server 8000` y abrir localhost:8000. La instalación requiere HTTPS o localhost.
 
-`app.js` conserva sin modificaciones la lógica de la fuente de la presentación (SHA-256 A6978D2DACB3C3C50CE7C836968A97ECFAACD790B3A74134B43E5A45D492ED76). La adaptación visual y funciones de instalación están en `mobile.css` y `mobile.js`. Cambiar el identificador de caché de `sw.js` al publicar nuevas versiones.
+`app.js` mantiene los criterios clínicos de la presentación y el umbral de HbA1c de 8,5 % del algoritmo redGDPS 2026. La versión 1.1 añade una explicación del cambio respecto a los tres tramos antiguos y una leyenda contextual de principios activos (`drug-legend.js`), también en la revisión detallada. Paleta magenta y azul inspirada en los materiales redGDPS; autoría dentro de Acerca de. Cambiar la versión de caché de `sw.js` con cada publicación.
 
 ## Alcance y privacidad
 
