@@ -1,5 +1,5 @@
-const CACHE='diabetes-congreso-v1.1';
-const SHELL=['./','./index.html','./app.js','./drug-legend.js','./style.css','./mobile.css','./mobile.js','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png','./icons/apple-touch-icon.png'];
+const CACHE='diabetes-congreso-v1.2';
+const SHELL=['./','./index.html','./app.js','./drug-legend.js','./style.css','./mobile.css','./flow.css','./mobile.js','./flow.js','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png','./icons/apple-touch-icon.png'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL))));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('diabetes-congreso-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',event=>{if(event.request.method!=='GET'||new URL(event.request.url).origin!==location.origin)return;event.respondWith(fetch(event.request).then(response=>{if(response.ok){const copy=response.clone();event.waitUntil(caches.open(CACHE).then(cache=>cache.put(event.request,copy)));}return response;}).catch(async()=>{const cached=await caches.match(event.request);return cached||new Response('Este documento no está disponible sin conexión. Conéctate a Internet y vuelve a abrirlo.',{status:503,headers:{'Content-Type':'text/plain; charset=utf-8'}});}));});

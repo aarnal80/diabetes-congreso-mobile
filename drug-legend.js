@@ -19,5 +19,5 @@ function drugLegend(text){
  ];
  const rows=entries.filter(([pattern])=>pattern.test(text));
  if(!rows.length)return '';
- return `<section class="drug-legend" aria-label="Leyenda de fármacos"><h3>¿Qué fármacos son?</h3><p class="legend-intro">Guía de las clases mencionadas arriba.</p><dl>${rows.map(([,name,definition,examples])=>`<div><dt>${name}<small>${definition}</small></dt><dd>${examples}</dd></div>`).join('')}</dl><p class="legend-note">Ejemplos de principios activos, no una lista para prescribir o combinar. Los fármacos de una misma clase no comparten necesariamente indicaciones ni beneficios cardiovasculares o renales. Comprobar ficha técnica.</p><a class="ref" href="https://redgdps.org/abordaje-integral-del-paciente-con-dm2/tratamiento-de-las-personas-con-dm2-20210921/" target="_blank" rel="noopener">Referencia de familias farmacológicas · redGDPS ↗</a></section>`;
+ return `<section class="drug-legend" aria-label="Leyenda de fármacos"><dl>${rows.map(([,name,definition,examples])=>`<div><dt>${name}</dt><dd>${examples}</dd></div>`).join('')}</dl></section>`;
 }

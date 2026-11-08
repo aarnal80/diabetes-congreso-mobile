@@ -12,7 +12,7 @@ La app prepara sus archivos para uso sin conexión después de la primera carga.
 
 Web estática sin dependencias de ejecución ni servicios de IA. Servir este directorio con `python -m http.server 8000` y abrir localhost:8000. La instalación requiere HTTPS o localhost.
 
-`app.js` mantiene los criterios clínicos de la presentación y el umbral de HbA1c de 8,5 % del algoritmo redGDPS 2026. La versión 1.1 añade una explicación del cambio respecto a los tres tramos antiguos y una leyenda contextual de principios activos (`drug-legend.js`), también en la revisión detallada. Paleta magenta y azul inspirada en los materiales redGDPS; autoría dentro de Acerca de. Cambiar la versión de caché de `sw.js` con cada publicación.
+`app.js` mantiene los criterios clínicos de la presentación y el umbral de HbA1c de 8,5 % del algoritmo redGDPS 2026. La versión 1.2 organiza la consulta en tres vistas: módulos, opciones y resultado. En formularios de selección se avanza al completar los criterios; los formularios numéricos usan «Ver resultado». Volver conserva los valores. La leyenda contextual de principios activos (`drug-legend.js`) se muestra compacta, también en la revisión detallada. Paleta magenta y azul inspirada en los materiales redGDPS; autoría dentro de Acerca de. Cambiar la versión de caché de `sw.js` con cada publicación.
 
 ## Alcance y privacidad
 
