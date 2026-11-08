@@ -22,8 +22,8 @@ Aplicación independiente, sin afiliación ni aval oficial de redGDPS. Los algor
 
 © 2026 Antonio Arnal. Todos los derechos reservados sobre la adaptación propia.
 
-## Índice cintura/altura · versión 1.5
+## Versión 1.6
 
-El módulo de obesidad calcula opcionalmente cintura (cm) / altura (cm), también en la revisión detallada. Si se introduce una medida, se exige la otra; la interpretación usa el valor sin redondear y el resultado mostrado se aproxima a cuatro decimales. ≥0,5 indica obesidad abdominal; no modifica por sí solo las opciones farmacológicas basadas en IMC y comorbilidades.
+Retirado cintura/altura. Autor: Antonio Arnal, Médico de Familia y Medicina de Urgencias. Coautor: Francisco M. Adán Gil, Médico de Familia, Coordinador de redGDPS en Aragón.
 
-Fuente: Carrillo Fernández y colaboradores, «Algoritmo de diagnóstico y tratamiento del sobrepeso y obesidad 2025 de la redGDPS», Diabetes Práctica 2025;16(02), p. 50, apartado Antropometría: https://www.diabetespractica.com/files/129/art3.pdf#page=2. Este criterio figura en el artículo de desarrollo, no en la lámina resumida de dos páginas incluida en la app.
+Clasificación ESC 2026: reducida <50%, preservada ≥50%. La revisión detallada distingue la evidencia terapéutica del PDF redGDPS 2024. Fuente: https://www.escardio.org/news/news-room/congress-news/2026-esc-guidelines-for-the-management-of-heart-failure/
