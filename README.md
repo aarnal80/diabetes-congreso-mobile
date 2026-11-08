@@ -1,4 +1,4 @@
-# Diabetes · Congreso redGDPS
+# GlucoGuía · Edición Congreso redGDPS
 
 Aplicación de **Dr. Antonio Arnal**, creada exclusivamente para el Congreso de la redGDPS 2026. Versión móvil independiente de la webapp de la diapositiva 28 de su presentación sobre diabetes e inteligencia artificial.
 

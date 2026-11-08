@@ -1,4 +1,4 @@
-const CACHE='diabetes-congreso-v1.3';
+const CACHE='diabetes-congreso-v1.4';
 const SHELL=['./','./index.html','./app.js','./drug-legend.js','./style.css','./mobile.css','./flow.css','./mobile.js','./flow.js','./manifest.webmanifest','./icons/logo.svg','./icons/favicon-32.png?v=1.3','./icons/logo.svg?v=1.3','./icons/icon-192.png?v=1.3','./icons/icon-512.png?v=1.3','./icons/apple-touch-icon.png?v=1.3'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL))));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('diabetes-congreso-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
